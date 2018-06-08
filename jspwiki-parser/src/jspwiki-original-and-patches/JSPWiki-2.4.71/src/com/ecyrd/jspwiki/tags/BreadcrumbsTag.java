@@ -150,8 +150,8 @@ public class BreadcrumbsTag extends WikiTagBase
     /**
      * Extends the LinkedList class to provide a fixed-size queue implementation
      */
-    public static class FixedQueue 
-        extends LinkedList
+    public static class FixedQueue<E>
+        extends LinkedList<E>
         implements Serializable
     {
         private int m_size;
@@ -162,15 +162,13 @@ public class BreadcrumbsTag extends WikiTagBase
             m_size = size;
         }
 
-        Object push(Object o)
+        public void push(E o)
         {
             add(o);
             if( size() > m_size )
             {
-                return removeFirst();
+                removeFirst();
             }
-            
-            return null;
         }
     }
 

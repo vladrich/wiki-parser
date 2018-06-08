@@ -213,8 +213,6 @@
            debug="${debug}"
            optimize="${optimize}"
            deprecation="${deprecation}"
-           source="1.4"
-           target="1.4"
            >
       <classpath refid="path.base" />
     </javac>
@@ -228,8 +226,6 @@
            destdir="${tests.build}"
            debug="true"
            deprecation="${deprecation}"
-           source="1.4"
-           target="1.4"
            >
       <classpath refid="path.base" />
     </javac>

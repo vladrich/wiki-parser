@@ -26,7 +26,7 @@ import com.ecyrd.jspwiki.util.WikiBackgroundThread;
  *  Only one instance exists per WikiEngine. It is a not a 
  *  daemon thread; rather, it listens for wiki engine shutdown 
  *  and persists in the JVM until it detects it.</p>
- *  <p>The <em>raison d'être</em> for this class is to work
+ *  <p>The <em>raison d'etre</em> for this class is to work
  *  around the fact that we need to keep track of HttpSessions
  *  and know which ones have expired, and which haven't. We can't
  *  t query the web container directly to see which have expired. As
